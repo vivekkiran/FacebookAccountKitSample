@@ -54,7 +54,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/reverb_icon"
+        android:src="@mipmap/reverb_icon"
         android:visibility="?attr/reverb_app_icon_visibility"
         tools:ignore="ContentDescription"
         />

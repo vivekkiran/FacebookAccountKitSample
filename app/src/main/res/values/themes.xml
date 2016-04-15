@@ -74,7 +74,7 @@
         <item name="com_accountkit_secondary_color">#ccffffff</item>
         <item name="com_accountkit_secondary_text_color">@android:color/white</item>
 
-        <item name="com_accountkit_background">@drawable/dog</item>
+        <item name="com_accountkit_background">@mipmap/dog</item>
         <item name="com_accountkit_background_color">#994e7e24</item>
         <item name="com_accountkit_input_text_color">?attr/com_accountkit_primary_text_color</item>
     </style>
@@ -84,7 +84,7 @@
         <item name="com_accountkit_primary_text_color">@android:color/white</item>
         <item name="com_accountkit_secondary_text_color">@android:color/white</item>
 
-        <item name="com_accountkit_background">@drawable/bicycle</item>
+        <item name="com_accountkit_background">@mipmap/bicycle</item>
         <item name="com_accountkit_background_color">#66000000</item>
         <item name="com_accountkit_input_accent_color">@android:color/white</item>
         <item name="com_accountkit_input_background_color">#00000000</item>
@@ -116,7 +116,7 @@
         <item name="com_accountkit_icon_color">?attr/com_accountkit_status_bar_color</item>
 
         <item name="reverb_app_icon_visibility">gone</item>
-        <item name="reverb_back_arrow_src">@drawable/reverb_arrow_purple</item>
+        <item name="reverb_back_arrow_src">@mipmap/reverb_arrow_purple</item>
         <item name="reverb_content_margin_top">@dimen/reverb_content_margin_top_small</item>
         <item name="reverb_text_all_caps">false</item>
     </style>
@@ -131,7 +131,7 @@
         <item name="com_accountkit_header_text_color">@android:color/white</item>
 
         <item name="reverb_app_icon_visibility">visible</item>
-        <item name="reverb_back_arrow_src">@drawable/reverb_arrow_white</item>
+        <item name="reverb_back_arrow_src">@mipmap/reverb_arrow_white</item>
         <item name="reverb_content_margin_top">@dimen/reverb_content_margin_top_large</item>
         <item name="reverb_text_all_caps">true</item>
     </style>

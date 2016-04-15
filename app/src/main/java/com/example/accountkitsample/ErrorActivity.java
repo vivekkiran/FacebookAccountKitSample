@@ -20,8 +20,8 @@
 
 package com.example.accountkitsample;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -29,7 +29,7 @@ import android.widget.TextView;
 import com.facebook.accountkit.AccountKit;
 import com.facebook.accountkit.AccountKitError;
 
-public class ErrorActivity extends Activity {
+public class ErrorActivity extends AppCompatActivity {
     static final String HELLO_TOKEN_ACTIVITY_ERROR_EXTRA =
             "HELLO_TOKEN_ACTIVITY_ERROR_EXTRA";
 

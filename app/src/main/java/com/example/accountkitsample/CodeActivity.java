@@ -20,15 +20,15 @@
 
 package com.example.accountkitsample;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.facebook.accountkit.AccountKit;
 
-public class CodeActivity extends Activity {
+public class CodeActivity extends AppCompatActivity {
     static final String HELLO_CODE_ACTIVITY_CODE_EXTRA = "HELLO_CODE_ACTIVITY_CODE_EXTRA";
     static final String HELLO_CODE_ACTIVITY_FINAL_STATE_EXTRA =
             "HELLO_CODE_ACTIVITY_FINAL_STATE_EXTRA";

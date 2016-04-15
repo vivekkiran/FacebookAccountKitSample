@@ -20,8 +20,8 @@
 
 package com.example.accountkitsample;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -32,7 +32,7 @@ import com.facebook.accountkit.AccountKitCallback;
 import com.facebook.accountkit.AccountKitError;
 import com.facebook.accountkit.PhoneNumber;
 
-public class TokenActivity extends Activity {
+public class TokenActivity extends AppCompatActivity {
     static final String HELLO_TOKEN_ACTIVITY_FINAL_STATE_EXTRA =
             "HELLO_TOKEN_ACTIVITY_FINAL_STATE_EXTRA";
     static final String HELLO_TOKEN_ACTIVITY_INITIAL_STATE_EXTRA =
