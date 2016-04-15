@@ -23,14 +23,14 @@
     <!-- RatingBar does not handle ShapeDrawables for the items, so just use images -->
     <item
         android:id="@android:id/background"
-        android:drawable="@drawable/reverb_rating_bar_unselected"
+        android:drawable="@mipmap/reverb_rating_bar_unselected"
         />
     <item
         android:id="@android:id/secondaryProgress"
-        android:drawable="@drawable/reverb_rating_bar_unselected"
+        android:drawable="@mipmap/reverb_rating_bar_unselected"
         />
     <item
         android:id="@android:id/progress"
-        android:drawable="@drawable/reverb_rating_bar_selected"
+        android:drawable="@mipmap/reverb_rating_bar_selected"
         />
 </layer-list>

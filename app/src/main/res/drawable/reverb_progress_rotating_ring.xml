@@ -21,7 +21,7 @@
 
 <rotate
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/reverb_progress_ring"
+    android:drawable="@mipmap/reverb_progress_ring"
     android:fromDegrees="0"
     android:pivotX="50%"
     android:pivotY="50%"
