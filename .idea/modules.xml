@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AccountKit.iml" filepath="$PROJECT_DIR$/AccountKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-kit-sdk-4.11.0/account-kit-sdk-4.11.0.iml" filepath="$PROJECT_DIR$/account-kit-sdk-4.11.0/account-kit-sdk-4.11.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('account-kit-sdk-4.11.0.aar'))
