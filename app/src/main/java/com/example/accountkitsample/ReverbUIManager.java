@@ -80,15 +80,15 @@ public class ReverbUIManager implements AdvancedUIManager, Parcelable {
             case SENT_CODE:
                 switch (loginType) {
                     case EMAIL:
-                        iconResourceId = R.drawable.reverb_email;
+                        iconResourceId = R.mipmap.reverb_email;
                         break;
                     case PHONE:
-                        iconResourceId = R.drawable.reverb_progress_complete;
+                        iconResourceId = R.mipmap.reverb_progress_complete;
                         break;
                 }
                 break;
             case EMAIL_VERIFY:
-                iconResourceId = R.drawable.reverb_email_sent;
+                iconResourceId = R.mipmap.reverb_email_sent;
                 break;
             case VERIFYING_CODE:
                 showProgressSpinner = true;
@@ -97,7 +97,7 @@ public class ReverbUIManager implements AdvancedUIManager, Parcelable {
                 iconResourceId = R.drawable.reverb_progress_complete;
                 break;
             case ERROR:
-                iconResourceId = R.drawable.reverb_error;
+                iconResourceId = R.mipmap.reverb_error;
                 break;
             case PHONE_NUMBER_INPUT:
             case EMAIL_INPUT:

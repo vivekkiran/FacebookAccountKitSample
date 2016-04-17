@@ -140,4 +140,5 @@
         <item name="reverb_app_icon_visibility">visible</item>
         <item name="reverb_text_all_caps">true</item>
     </style>
+
 </resources>

@@ -27,13 +27,13 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatSpinner;
+import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.facebook.accountkit.AccessToken;
@@ -53,7 +53,7 @@ import java.util.UUID;
 public class MainActivity extends AppCompatActivity {
     private static final int FRAMEWORK_REQUEST_CODE = 1;
 
-    private Switch advancedUISwitch;
+    private SwitchCompat advancedUISwitch;
     private ButtonType confirmButton;
     private ButtonType entryButton;
     private String initialStateParam;
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             showHelloActivity(null);
         }
 
-        final Spinner themeSpinner = (Spinner) findViewById(R.id.theme_spinner);
+        final AppCompatSpinner themeSpinner = (AppCompatSpinner) findViewById(R.id.theme_spinner);
         if (themeSpinner != null) {
             final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                     this,
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        advancedUISwitch = (Switch) findViewById(R.id.advanced_ui_switch);
+        advancedUISwitch = (SwitchCompat) findViewById(R.id.advanced_ui_switch);
 
         final MainActivity thisActivity = this;
         final LinearLayout advancedUIOptionsLayout =
@@ -150,8 +150,8 @@ public class MainActivity extends AppCompatActivity {
                 if (isChecked) {
                     advancedUIOptionsLayout.setVisibility(View.VISIBLE);
 
-                    final Spinner entryButtonSpinner =
-                            (Spinner) findViewById(R.id.entry_button_spinner);
+                    final AppCompatSpinner entryButtonSpinner =
+                            (AppCompatSpinner) findViewById(R.id.entry_button_spinner);
                     if (entryButtonSpinner != null) {
                         entryButtonSpinner.setAdapter(buttonNameAdapter);
                         entryButtonSpinner.setOnItemSelectedListener(
@@ -180,8 +180,8 @@ public class MainActivity extends AppCompatActivity {
                                 });
                     }
 
-                    final Spinner confirmButtonSpinner =
-                            (Spinner) findViewById(R.id.confirm_button_spinner);
+                    final AppCompatSpinner confirmButtonSpinner =
+                            (AppCompatSpinner) findViewById(R.id.confirm_button_spinner);
                     if (confirmButtonSpinner != null) {
                         confirmButtonSpinner.setAdapter(buttonNameAdapter);
                         confirmButtonSpinner.setOnItemSelectedListener(
@@ -212,8 +212,8 @@ public class MainActivity extends AppCompatActivity {
                                 });
                     }
 
-                    final Spinner textPositionSpinner =
-                            (Spinner) findViewById(R.id.text_position_spinner);
+                    final AppCompatSpinner textPositionSpinner =
+                            (AppCompatSpinner) findViewById(R.id.text_position_spinner);
                     if (textPositionSpinner != null) {
                         final List<CharSequence> textPositions = new ArrayList<>();
                         textPositions.add("Default");
@@ -327,7 +327,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private AccountKitActivity.ResponseType getResponseType() {
-        final Switch responseTypeSwitch = (Switch) findViewById(R.id.response_type_switch);
+        final SwitchCompat responseTypeSwitch = (SwitchCompat) findViewById(R.id.response_type_switch);
         if (responseTypeSwitch != null && responseTypeSwitch.isChecked()) {
             return AccountKitActivity.ResponseType.TOKEN;
         } else {
@@ -341,16 +341,16 @@ public class MainActivity extends AppCompatActivity {
                 = new AccountKitConfiguration.AccountKitConfigurationBuilder(
                 loginType,
                 getResponseType());
-        final Switch titleTypeSwitch = (Switch) findViewById(R.id.title_type_switch);
-        final Switch stateParamSwitch = (Switch) findViewById(R.id.state_param_switch);
-        final Switch facebookNotificationsSwitch =
-                (Switch) findViewById(R.id.facebook_notification_switch);
-        final Switch useManualWhiteListBlacklist =
-                (Switch) findViewById(R.id.whitelist_blacklist_switch);
-        final Switch readPhoneStateSwitch =
-                (Switch) findViewById(R.id.read_phone_state_switch);
-        final Switch receiveSMS =
-                (Switch) findViewById(R.id.receive_sms_switch);
+        final SwitchCompat titleTypeSwitch = (SwitchCompat) findViewById(R.id.title_type_switch);
+        final SwitchCompat stateParamSwitch = (SwitchCompat) findViewById(R.id.state_param_switch);
+        final SwitchCompat facebookNotificationsSwitch =
+                (SwitchCompat) findViewById(R.id.facebook_notification_switch);
+        final SwitchCompat useManualWhiteListBlacklist =
+                (SwitchCompat) findViewById(R.id.whitelist_blacklist_switch);
+        final SwitchCompat readPhoneStateSwitch =
+                (SwitchCompat) findViewById(R.id.read_phone_state_switch);
+        final SwitchCompat receiveSMS =
+                (SwitchCompat) findViewById(R.id.receive_sms_switch);
 
         if (titleTypeSwitch != null && titleTypeSwitch.isChecked()) {
             configurationBuilder.setTitleType(AccountKitActivity.TitleType.APP_NAME);
